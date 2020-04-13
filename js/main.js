@@ -1,5 +1,10 @@
-// Business Logic
--
+const Pizza = function(size, sauce, toppings) {
+  this.size = size;
+  this.sauce = sauce;
+  this.toppings = toppings;
+  this.price = 8;
+  this.pricePerTopping = 1;
+}
 
 function getToppings(checkboxNodes) {
   const toppings = [];
@@ -43,6 +48,12 @@ $(document).ready(function() {
     const newPizza = new Pizza(size, sauce, toppings);
     newPizza.addPrice();
     console.log(newPizza.price);
+
+    $("#receipt-size").text(size);
+    $("#receipt-sauce").text(sauce);
+    $("#receipt-toppings").text(newPizza.toppings);
+    $("#receipt-cost").text("$" + newPizza.price);
+    $("#receipt").show();
   });
 });
 
