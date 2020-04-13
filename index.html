@@ -7,15 +7,19 @@
     <script src="js/main.js"></script>
     <title>pizza-parlor</title>
   </head>
-  <body>     
-    <h1>Robo Pizza</h1>
+  <body> 
     <div class="container">
+      <div class="jumbotron">
+        <h1>Robo Pizza</h1>
+      </div>
+    </div>    
+    <div class="container">  
       <form id="get-started-order">
         <button type="submit" class="btn btn-danger" id="order-now">ORDER</button>
       </form>
     </div>
     <div class="container">
-    <form id="customize-pizza-form">
+      <form id="customize-pizza-form">
         <h2>Customize pizza:</h2>
         <div>
           <label for="pizza-size">Select size:</label>
@@ -31,9 +35,20 @@
             <option value="small">Red</option>
             <option value="medium">White</option>
           </select>
-        </div>
-        
-      </form>
+        </div> 
+        <div>
+          <h3>Select toppings:</h3>
+          <input type="checkbox" id="topping1" name="topping1" value="olives">
+          <label for="vehicle1"> Olives</label><br>
+          <input type="checkbox" id="topping2" name="topping2" value="onions">
+          <label for="vehicle2"> Onions</label><br>
+          <input type="checkbox" id="topping3" name="topping3" value="spinach">
+          <label for="vehicle3"> Spinach</label><br>
+          <input type="checkbox" id="topping4" name="topping4" value="pineaplle">
+          <label for="vehicle3"> Pineapple</label><br>
+        </div> 
+        <button type="submit" class="btn btn-danger" id="place-order">PLACE ORDER</button>
+      </form> 
     </div>
   </body>
 </html>
