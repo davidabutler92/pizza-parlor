@@ -1,4 +1,4 @@
-#dave's hot lips pizzaria
+# Robo Pizza
 ## Goal 
 
 #### The goal is to use and demonstrate my understanding of constructors and prototypes.
