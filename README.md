@@ -26,9 +26,9 @@
 
 ## Setup/Installation Requirements
 * Make a new directory to clone the repo in.
-* Clone repository @ [Click here](https://github.com/davidabutler92/pig-dice.git)
+* Clone repository @ [Click here](https://github.com/davidabutler92/pizza-parlor.git)
 * Open directory (code .) in terminal.
-* To see in gh-pages [Click Here](https://davidabutler92.github.io/pig-dice/)  
+* To see in gh-pages [Click Here](https://davidabutler92.github.io/pizza-parlor/)  
 
 ## Known Bugs 
 #### There are no known bugs at the time.
