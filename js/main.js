@@ -1,10 +1,5 @@
 // Business Logic
-const Pizza = function(size, sauce, toppings) {
-  this.size = size;
-  this.sauce = sauce;
-  this.toppings = toppings; 
-  this.price = 8;
-}
+-
 
 function getToppings(checkboxNodes) {
   const toppings = [];
@@ -20,10 +15,12 @@ function getToppings(checkboxNodes) {
 }
 
 Pizza.prototype.addPrice = function() {
-  if (this.size === "small") {
-    return this.price;
+  if (this.size === "medium") {
+    this.price += 2; 
+  } else  if (this.size === "large") {
+    this.price += 4;
   }
-  }
+  this.price += (this.pricePerTopping * this.toppings.length);
 }
  
 
@@ -44,10 +41,12 @@ $(document).ready(function() {
     const toppings = getToppings(checkboxNodes);
 
     const newPizza = new Pizza(size, sauce, toppings);
-    console.log(newPizza);
-      // addPrice();
-
+    newPizza.addPrice();
+    console.log(newPizza.price);
   });
 });
+
+
+
 
 
